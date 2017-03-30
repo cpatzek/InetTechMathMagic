@@ -1,0 +1,249 @@
+﻿.navbar-text > a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+/*Abstand für den Jumbotron und Hintergrundbild */
+body {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	background-image: url("../img/bground.png");
+	background-repeat: repeat-x;
+}
+
+/*Jumbotron transparent machen */
+.jumbotron {
+    background-color:transparent !important;
+}
+
+#websiteSlogan{
+	font-size: 4em;
+	vertical-align: middle;
+	font-family: 'Pacifico', cursive;
+	padding-left: 15px;
+	color: #191970;
+}
+
+/* Map ausrichten */
+#map{
+ 	height: 500px; 
+/* 	padding-left: 50%; */
+}
+
+#text{
+	font-size: 2em;
+	vertical-align: middle;
+	font-family: 'Oswald', cursive;
+	color: #191970;
+}
+
+
+.navbar-brand>img {
+	height: 100%;
+	/*max-width: 200px;*/
+	padding-top: 3px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+	/* width: auto; */
+}
+
+.navbar-brand {
+  padding: 2px;
+}
+
+
+.navbar-default {
+	background-color: #00447E;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+
+.navbar-default .navbar-brand {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+	color: #EF821C;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #FFFFFF;
+	background-color: #EF821C;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #EF821C;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus{
+	color: #FFFFFF;
+	background-color: #EF821C;
+}
+
+.btn-danger{
+	background-color: #00447E;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active{
+	background-color: #EF821C;
+}
+
+
+.btn-primary {
+	background-color: #00447E;
+	border-color: #000000;
+	color: #FFFFFF;
+}
+
+.btn-success {
+	background-color: #EF821C;
+	border-color: #EF821C;
+	color: #FFFFFF;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.open .dropdown-toggle.btn-success {
+	color: #FFFFFF;
+	background-color: #d86a02;
+	border-color: #000000; 
+}
+
+.btn-default {
+	background-color: #c9c9c9;
+	border-color: #c9c9c9;
+	color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+	color: #FFFFFF;
+	background-color: #c9c9c9;
+	border-color: #000000; 
+}
+
+/*Zoom beim hover über die Thumb Bilder*/
+.thumbnail img:hover {
+	transform: scale(1.1);
+}
+/*Flüßiger-Zoom*/
+.thumbnail img {
+	transition: all 0.5s ease 0s;
+	width: 100%;
+}
+/*Zoom bleibt im Rahmen*/
+.thumbnail {
+	overflow: hidden;
+}
+
+#userEingabe1 {
+	width: 100px;
+	padding: 1px 10px;
+	border: 2px solid #FF8E1B;
+    border-radius: 4px;
+	outline: none;
+}
+
+#userEingabe2 {
+	width: 100px;
+	padding: 1px 10px;
+	border: 2px solid #a7a7a7;
+    border-radius: 4px;
+	outline: none;
+}
+
+#userEingabe3 {
+	width: 100px;
+	padding: 1px 10px;
+	border: 2px solid #FFDE2A;
+    border-radius: 4px;
+	outline: none;
+}
+
+#eingabe1 {
+	color: #000000;
+}
+
+#erg1Flaeche {
+	color: #00772E;
+}
+
+#erg2Umfang {
+	color: #00447E;
+}
+
+#erg3Diagonale {
+	color: #700000;
+}
+
+#fehlerEingabe {
+	color: #FF0011;
+}
+
+#qLoesen {
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+
+.containerBildF {
+  position: relative;
+  width: 100%;
+}
+
+.overlayF {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.containerBildF:hover .overlayF {
+  bottom: 0;
+  height: 100%;
+}
+
+.textF {
+  white-space: nowrap; 
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
